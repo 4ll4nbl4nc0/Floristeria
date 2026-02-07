@@ -1,48 +1,49 @@
 import React from 'react';
 import { Box, Typography, Container, Card, CardMedia, CardContent, CardActions, Button, Chip } from '@mui/material';
 import { motion } from 'framer-motion';
+import { IMAGES } from '../utils/images';
 
 const products = [
     {
         id: 1,
         title: 'Amor Eterno',
         price: '$45',
-        image: 'https://images.unsplash.com/photo-1518199266791-5375a83190b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+        image: IMAGES.PRODUCTS.AMOR_ETERNO,
         category: 'Romance'
     },
     {
         id: 2,
         title: 'Primavera Radiante',
         price: '$35',
-        image: 'https://images.unsplash.com/photo-1526047932273-341f2386314a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+        image: IMAGES.PRODUCTS.PRIMAVERA_RADIANTE,
         category: 'Cumpleaños'
     },
     {
         id: 3,
-        title: 'Elegancia Blanca',
+        title: 'Pasión Roja',
         price: '$60',
-        image: 'https://images.unsplash.com/photo-1562690868-60bbe7293e94?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+        image: IMAGES.PRODUCTS.ELEGANCIA_BLANCA,
         category: 'Bodas'
     },
     {
         id: 4,
         title: 'Jardín Silvestre',
         price: '$50',
-        image: 'https://images.unsplash.com/photo-1457089328109-e5d9bd499191?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+        image: IMAGES.PRODUCTS.JARDIN_SILVESTRE,
         category: 'Decoración'
     },
     {
         id: 5,
-        title: 'Pasión Roja',
+        title: 'Elegancia Blanca',
         price: '$55',
-        image: 'https://images.unsplash.com/photo-1509623098196-0ef0ab6aa99c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+        image: IMAGES.PRODUCTS.LIRIOS,
         category: 'Aniversario'
     },
     {
         id: 6,
         title: 'Dulce Despertar',
         price: '$40',
-        image: 'https://images.unsplash.com/photo-1487070183336-b863f5f42ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+        image: IMAGES.PRODUCTS.DULCE_DESPERTAR,
         category: 'Detalles'
     },
 ];

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography, Container, Button } from '@mui/material';
 import { motion } from 'framer-motion';
+import { IMAGES } from '../utils/images';
 
 const About = () => {
     return (
@@ -33,7 +34,7 @@ const About = () => {
                             >
                                 <Box
                                     component="img"
-                                    src="https://images.unsplash.com/photo-1563241527-3004b7be025f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                                    src={IMAGES.ABOUT.FLORIST}
                                     alt="Florist working"
                                     sx={{
                                         width: '100%',

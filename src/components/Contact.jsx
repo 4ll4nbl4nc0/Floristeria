@@ -71,8 +71,17 @@ const Contact = () => {
                                     </Box>
                                 </Box>
 
-                                <Box sx={{ mt: 'auto', height: 250, backgroundColor: 'rgba(255,255,255,0.9)', borderRadius: 4, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                    <Typography variant="caption" color="text.secondary">[Mapa de Google Maps Aquí]</Typography>
+                                <Box sx={{ mt: 4, height: 300, borderRadius: 4, overflow: 'hidden', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.532398573629!2d-99.1724646850945!3d19.432607786884615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92b75aa014d%3A0x17d810d20da6e8cf!2sPalacio%20de%20Bellas%20Artes!5e0!3m2!1ses!2smx!4v1689626384594!5m2!1ses!2smx"
+                                        width="100%"
+                                        height="100%"
+                                        style={{ border: 0 }}
+                                        allowFullScreen=""
+                                        loading="lazy"
+                                        referrerPolicy="no-referrer-when-downgrade"
+                                        title="Ubicación Floristería"
+                                    ></iframe>
                                 </Box>
                             </Paper>
                         </motion.div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography, Button, Container } from '@mui/material';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
+import { IMAGES } from '../utils/images';
 
 const Hero = () => {
     return (
@@ -10,13 +11,11 @@ const Hero = () => {
             sx={{
                 height: '100vh',
                 width: '100%',
-                backgroundImage: 'url(https://images.unsplash.com/photo-1490750967868-bcdf92dd218a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
                 position: 'relative',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
+                overflow: 'hidden',
                 '&::before': {
                     content: '""',
                     position: 'absolute',
@@ -24,11 +23,28 @@ const Hero = () => {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    background: 'linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(229, 159, 178, 0.2) 100%)', // Subtle gradient overlay
-                    backdropFilter: 'blur(1px)',
+                    zIndex: 1,
+                    background: 'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(229, 159, 178, 0.2) 100%)', // Adjusted gradient for video visibility
                 },
             }}
         >
+            <Box
+                component="video"
+                src={IMAGES.HERO.VIDEO}
+                autoPlay
+                loop
+                muted
+                playsInline
+                sx={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    zIndex: 0,
+                }}
+            />
             <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 2, textAlign: 'center', color: '#fff' }}>
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
